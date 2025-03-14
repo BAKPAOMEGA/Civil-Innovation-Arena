@@ -1,0 +1,300 @@
+:root {
+  --primer: #006838;
+  --bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Pagkaki";
+  src: local("Pagkaki Regular"), local("Pagkaki-Regular"),
+    url("PAGKAKI-Regular.woff2") format("woff2"),
+    url("PAGKAKI-Regular.woff") format("woff"),
+    url("PAGKAKI-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--primer);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 2000px;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 9999;
+}
+nav a {
+  color: #000000;
+}
+
+nav a:hover {
+  color: #46de48;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.logo {
+  flex: 1;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  transition: 0.4s;
+}
+
+.menu a {
+  padding: 15px 10px;
+  font-size: 16px;
+}
+
+.list {
+  font-size: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.Location {
+  margin-right: 10px;
+}
+
+#list {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../BGpic.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero .content,
+.compe h1,
+.contact h1 {
+  text-align: center;
+  margin: auto;
+  color: #ffffff;
+}
+
+.hero .content h1,
+.compe h1,
+.contact h1 {
+  font-size: 4em;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000000;
+}
+
+.hero .content p {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  line-height: 1.4;
+  text-shadow: 1px 1px 3px #000000;
+  max-width: 30rem;
+}
+
+.hero .content .cta,
+.row .compe-card .compe-cta {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1, 4rem;
+  color: #ffffff;
+  background-color: #46de48;
+  border-radius: 8px;
+  text-shadow: 1px 1px 3px #000000;
+}
+
+/* Competition Section */
+.comp {
+  background-image: url("../BGpic2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  color: #ffffff;
+}
+
+.compe-card {
+  text-align: center;
+}
+
+.row .compe-card img {
+  border-radius: 40%;
+  width: 30%;
+}
+
+.row .compe-card h2 {
+  font-size: 3rem;
+  margin-top: 1.5rem;
+  color: #e1fdc1;
+  font-family: Pagkaki;
+}
+
+.row.compe-card h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #e1fdc1;
+  font-family: Pagkaki;
+}
+
+.row .compe-desc {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #e1fdc1;
+  max-width: 50rem;
+}
+
+/* CONTATCT */
+.contact {
+  margin-top: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  background-image: url("../BGpic2.png");
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.contact .row .map {
+  width: 100%;
+  flex: 1 1 45rem;
+  object-fit: cover;
+  height: 30rem;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  padding-left: 2rem;
+}
+
+.contact .row form .input-group input,
+.contact .row form .input-group textarea {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.5rem;
+  background: none;
+}
+
+.contact .row form .input-group .icon {
+  color: #000000;
+  margin-right: 2rem;
+}
+
+.contact .row form .btn {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1, 7rem;
+  color: #ffffff;
+  background-color: #46de48;
+  cursor: pointer;
+}
+
+/* Media Queriews */
+
+/* dekstop */
+@media (max-width: 1920px) {
+  html {
+    font-size: 120%;
+  }
+}
+/* Handphone */
+@media (max-width: 450px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+  #list {
+    display: inline-block;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: rgb(20, 86, 3);
+    width: 250px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
+    transition: right 0.4s ease-in-out;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+  .menu.active {
+    right: 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
